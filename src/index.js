@@ -1,3 +1,6 @@
 import "./style.css";
+import contentContainer from "./home.js";
 
-alert("I'm starting My Restaurant page using Webpack");
+window.addEventListener('load', () => {
+    contentContainer;
+});

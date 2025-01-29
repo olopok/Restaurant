@@ -1,3 +1,23 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     background-color: lightcyan;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 50px;
+    background-color: blueviolet;
+}
+
+.description {
+    font-size: large;
+    font-weight: bold;
+    color: brown;
 }
