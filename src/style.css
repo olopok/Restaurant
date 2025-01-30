@@ -34,6 +34,10 @@ button {
     margin-inline: 0.7em;
 }
 
+.button-active, button:hover {
+    text-decoration: underline;
+}
+
 #content {
     max-width: 50%;
     height: auto;
