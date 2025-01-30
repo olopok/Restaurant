@@ -5,19 +5,63 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: lightcyan;
+    background-image: url(./mgg-vitchakorn-98Xi5vMGKck-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: right;
     min-height: 50px;
-    background-color: blueviolet;
+    background-color: rgba(43, 126, 75, 0.5);
+    
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.7em;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(37, 36, 32);
+    color: whitesmoke;
+    margin-inline: 0.7em;
+}
+
+#content {
+    max-width: 50%;
+    height: auto;
+    border: 2px solid rgb(120, 168, 41);
+    border-radius: 15px;
+    align-self: left;
+    margin: 10rem 2rem;
+    padding: 2em;
+    background-color: rgba(86, 177, 12, 0.5);
 }
 
 .description {
-    font-size: large;
+    font-size: 2em;
     font-weight: bold;
-    color: brown;
+    color: rgba(0, 0, 0, 0.75);
 }
+
+.credits {
+    font-size: medium;
+    color: whitesmoke;
+    margin-left: 0.5rem;
+}
+
+a {
+    color: whitesmoke;
+}
+
+footer {
+    display: inline-flex;
+}
+
