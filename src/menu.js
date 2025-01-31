@@ -5,8 +5,8 @@ function menuContent() {
     }
     document.getElementById('menu').classList.add('button-active');
     const menuListContainer = document.getElementById('content');
-    menuListContainer.className = "";
-    menuListContainer.classList.add = "menu-container"
+    // menuListContainer.className = "";
+    // menuListContainer.classList.add = "menu-container"
     const dish = document.createElement('p');
     dish.textContent = "Spaghetti al pomodoro e basilico";
 

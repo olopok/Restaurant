@@ -6,21 +6,31 @@ function homeContent() {
     homePara.classList.add('description');
 
     const contentContainer = document.getElementById('content');
+
+    if (contentContainer.hasChildNodes) {
+        contentContainer.innerHTML = "";
+    };
+
+
     const btns = document.querySelectorAll('button');
     for (let i of btns) {
         i.classList.remove('button-active');
     }
     document.getElementById('home').classList.add('button-active');
-    contentContainer.className = "";
-    contentContainer.classList.add('home-container');
+
     contentContainer.appendChild(homePara);
 
-    const footer = document.querySelector('footer')
+
+
+};
+
+function loadFooter() {
+    const footer = document.querySelector('footer');
     const photoCreditsText1 = document.createElement('p');
     const photoCreditsText2 = document.createElement('p');
     const creditsLink1 = document.createElement('a');
     const creditsLink2 = document.createElement('a');
-
+    
     photoCreditsText1.classList.add('credits');
     photoCreditsText2.classList.add('credits');
 
@@ -36,12 +46,12 @@ function homeContent() {
     photoCreditsText1.appendChild(creditsLink1);
     photoCreditsText2.appendChild(creditsLink2);
 
+
     footer.appendChild(photoCreditsText1);
     footer.appendChild(photoCreditsText2);
-};
+}
 
 
 export default homeContent;
-// export default contentContainer;
-// export {footer};
+export { loadFooter };
 
