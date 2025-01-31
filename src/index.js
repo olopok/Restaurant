@@ -1,6 +1,6 @@
 import "./style.css";
 import homeContent, {loadFooter} from "./home.js";
-import { menuContent } from "./menu.js";
+import { menuContent } from "./menu-starters.js";
 
 const menuButton = document.getElementById('menu');
 menuButton.addEventListener('click', menuContent);

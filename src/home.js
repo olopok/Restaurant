@@ -30,14 +30,14 @@ function loadFooter() {
     const photoCreditsText2 = document.createElement('p');
     const creditsLink1 = document.createElement('a');
     const creditsLink2 = document.createElement('a');
-    
+
     photoCreditsText1.classList.add('credits');
     photoCreditsText2.classList.add('credits');
 
     creditsLink1.setAttribute("href", "https://unsplash.com/@mggbox?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash");
     creditsLink2.setAttribute("href", "https://unsplash.com/photos/photo-of-cooked-pasta-on-plate-98Xi5vMGKck?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash");
 
-    photoCreditsText1.textContent = "Photo by: ";
+    photoCreditsText1.textContent = "Background photo by: ";
     photoCreditsText2.textContent = " on ";
 
     creditsLink1.textContent = "Mgg Vitchakorn";

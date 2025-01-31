@@ -69,3 +69,31 @@ footer {
     display: inline-flex;
 }
 
+/* menu style */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5, auto);
+    border:2px solid rgb(120, 168, 41);
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin-block: 0.5rem;
+}
+
+.dish-img {
+    max-width: 10em;
+    max-height: 10em;
+    grid-row: 1 /span 4;
+}
+
+.menu-credits {
+    grid-column: 1 /span 2;
+}
+
