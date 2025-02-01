@@ -1,6 +1,6 @@
 function homeContent() {
     const homePara = document.createElement('p');
-    const text = "Since 1987 we serve the most delicious dishes from the famous italian cousine !!!";
+    const text = "Since 1987 we serve the most delicious dishes of the famous italian cousine !!!";
 
     homePara.textContent = text;
     homePara.classList.add('description');

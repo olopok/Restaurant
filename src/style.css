@@ -16,10 +16,12 @@ body {
 
 nav {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: right;
     min-height: 50px;
-    background-color: rgba(43, 126, 75, 0.5);
+    background-color: rgba(43, 126, 75, 0.85);
+    position: fixed;
     
 }
 
@@ -66,10 +68,12 @@ a {
 }
 
 footer {
+    height: 2rem;
     display: inline-flex;
+    align-content: baseline;
 }
 
-/* menu style */
+/* menu tab style */
 
 .card-container {
     display: flex;
@@ -83,6 +87,7 @@ footer {
     grid-template-rows: repeat(5, auto);
     border:2px solid rgb(120, 168, 41);
     border-radius: 15px;
+    justify-content: left;
     padding: 0.5rem;
     margin-block: 0.5rem;
 }
